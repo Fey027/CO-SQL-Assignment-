@@ -1,0 +1,22 @@
+﻿Questions:
+1. Write a query that selects all the columns from the table.
+2.Write a query that returns a list of clubs that don't charge a fee for membership.
+3. Write a query to produce a list of clubs that contain "Tennis" in their name.
+4. Write a query to list out the 'name' of a facility and the 'membercost' of that facility.
+5. Write a query to select the five most expensive facilities to maintain on a monthly basis.
+Answers:
+1. SELECT*
+    FROM country_club
+2. SELECT*
+   FROM country_club
+   WHERE membercost=0
+3. SELECT*
+   FROM country_club
+   WHERE name like %Tennis%
+4. SELECT name, membercost
+   FROM country_club
+   WHERE name= 'Squah Court's
+5. SELECT name, monthlymaintenance 
+   FROM country_club
+   ORDER BY monthlymaintenance DESC
+   LIMIT 5
